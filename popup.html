@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Dealnews Filter</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>    
+  </head>
+  <body>
+    <h1>Dealnews Filter</h1>
+    <p>Hide deals from certain merchants.</p>
+    <div id="SitesToBlock">"SheIn","Groupon","Talbots","Micro","Perfumania","A4C","Venus","Ashford","Jos.","FreedomPop"</div>
+  </body>
+</html>
